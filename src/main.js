@@ -4,6 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// initial css
+import 'styles/reset.css'
+import 'styles/border.css'
+
+// common css
+import 'styles/common.styl'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
