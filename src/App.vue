@@ -20,8 +20,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-#app
-  min-height 100%
-  position relative
+<style lang="stylus">
+.pg-content
+  min-height 14rem
 </style>

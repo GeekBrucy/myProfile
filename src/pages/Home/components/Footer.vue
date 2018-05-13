@@ -11,13 +11,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.footer
-  text-align center
-  font-size .4rem
-  width 100%
-  // height 1.6rem
-  line-height 1.6rem
-  background-color #F33535
-  position absolute
-  bottom 0
+
 </style>
