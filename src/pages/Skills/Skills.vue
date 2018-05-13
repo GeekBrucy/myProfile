@@ -1,17 +1,19 @@
 <template>
   <section class="my-skills">
-    <div class="skill-header">
-      My Skills
-    </div>
-    <div class="skill-content">
-      <div v-for="(item, value) of skills" :key="value">
-        <div class="skill-content-title">{{handleKeyName(value)}}</div>
-        <div class="skill-content-container" v-for="(value, key) of item" :key="key">
-          <h1>{{ handleKeyName(key) }}</h1>
-          <div class="progress-bar-outter">
-            <div class="progress-bar-inner"
-            :style="{'width': handleProgressBarWidth(value) + '%', 'background': 'linear-gradient(45deg,' + handleProgressBarBgc(value).color + ',' + handleProgressBarBgc(value).color2 + ' )'}">
-              <div class="progress-text">{{ handleProgressBarWidth(value) + '%' }}</div>
+    <div class="section-overlay">
+      <div class="skill-header">
+        My Skills
+      </div>
+      <div class="skill-content">
+        <div v-for="(item, value) of skills" :key="value">
+          <div class="skill-content-title">{{handleKeyName(value)}}</div>
+          <div class="skill-content-container" v-for="(value, key) of item" :key="key">
+            <h1>{{ handleKeyName(key) }}</h1>
+            <div class="progress-bar-outter">
+              <div class="progress-bar-inner"
+              :style="{'width': handleProgressBarWidth(value) + '%', 'background': 'linear-gradient(45deg,' + handleProgressBarBgc(value).color + ',' + handleProgressBarBgc(value).color2 + ' )'}">
+                <div class="progress-text">{{ handleProgressBarWidth(value) + '%' }}</div>
+              </div>
             </div>
           </div>
         </div>
@@ -86,6 +88,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.my-skills
+  background url(../../../static/imgs/section02.jpg) no-repeat
+  background-size cover
+  background-position center
+  background-attachment fixed
+  position relative
+  min-height 700px
 .skill-header
   font-weight bold
   font-size .8rem
