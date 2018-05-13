@@ -7,7 +7,7 @@
       <ul class="main-nav inline-block">
         <li class="nav-item">About Me</li>
         <li class="nav-item">Skills</li>
-        <li class="nav-item">Posts</li>
+        <li class="nav-item">Projects</li>
       </ul>
     </div>
   </div>

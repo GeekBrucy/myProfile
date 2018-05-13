@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="my-skills">
     <div class="skill-header">
       My Skills
     </div>
@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
